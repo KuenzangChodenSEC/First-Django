@@ -3,8 +3,8 @@ from .models import Student
 
 # Create your views here.
 def index(request):
-    Students = Students.objects.all()
-    context = {'students': Students}
+    students = Student.objects.all()
+    context = {'students': students}
 
 
     return render(request, 'index.html', context)
