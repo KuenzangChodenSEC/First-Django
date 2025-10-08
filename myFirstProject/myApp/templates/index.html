@@ -18,9 +18,9 @@
            </tr>
            {% for student in students %} <!-- Loop through the students passed from the view. In here students refers to the list of Student objects created in the view -->
            <tr>
-               <td>{{ students.name }}</td>
-               <td>{{ students.studentID }}</td>
-               <td>{{ students.age }}</td>
+               <td>{{ student.name }}</td>
+               <td>{{ student.studentID }}</td>
+               <td>{{ student.age }}</td>
            </tr>
            {% endfor %} <!-- End of the loop -->
        </table>
